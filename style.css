@@ -130,7 +130,7 @@ div.titre {
     margin-left: 12%;
     display: flex;
 }
-#button input{
+#button input ,#delete{
     margin: 0 0 0 10px;
     padding: 10px;
     font-size: 0.7em;
@@ -140,17 +140,23 @@ div.titre {
     border: none;
     cursor: pointer;
 }
-#button input:hover{
+#button input:hover ,#delete:hover{
     background-color: #000;
     color: rgb(250, 124, 124);
     transition: 0.5;
     border-radius: 20px;
 }
+label{
+    color: rgb(0, 0, 0);
+}
+h4{
+    color: rgb(0, 0, 0);
+}
 
 table{
     border-collapse: collapse;
     margin-top: 5%;
-    margin-left: 9%;
+    margin-left: 1%;
     margin-bottom: 5%;
 }
 table th{
@@ -172,6 +178,24 @@ table td{
 #btnEdit{
     display: none;
 }
+
+#delAsk{
+    box-sizing: border-box;
+    background: rgba(255, 255, 255, 0.6);
+    padding: 10px;
+    width: fit-content;
+    height: fit-content;
+    border-radius: 20px;
+    display: none;
+    margin-left: 70%;
+    margin-top: -7%;
+    margin-bottom: 3%;
+}
+#delAsk input{
+    margin-top: 4%;
+    margin-left: 7%;
+}
+
 
 @media only screen and (max-width: 700px) {
     header{

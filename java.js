@@ -18,6 +18,7 @@ function AddProduct(){
   let option = document.getElementById('select1').value;
   let option2 = document.getElementById('select2').value;
   let checkbox = document.getElementById('Oui').checked;
+
   let checkbox2 = document.getElementById('Non').checked;
   let option3 = document.getElementById('Oui').value;
   let option4 = document.getElementById('Non').value;
@@ -74,11 +75,23 @@ function AddProduct(){
     document.getElementById('select2').value="";
     document.getElementById('Oui').checked="";
     document.getElementById('Non').checked="";
+
   }
   
 }
 function DeleteRow(i){
-  document.getElementById("col"+i).remove();
+  document.getElementById('delAsk').style.display='block';
+  document.getElementById('delete').onclick=function(){
+    let checkbox3 = document.getElementById('oui').checked;
+    let checkbox4 = document.getElementById('Non').checked;
+    if(checkbox3 == true){
+      document.getElementById("col"+i).remove();
+      document.getElementById('delAsk').style.display='none';
+    }
+    else if(checkbox4 == true){
+      document.getElementById('delAsk').style.display='none';
+    }
+  }
 }
 let table = document.getElementById('table'),rIndex;
 function ModifierRow(){

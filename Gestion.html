@@ -50,7 +50,7 @@
                 <div id="button">
                     <input type="button" onclick="AddProduct()" id="btnAjouter" value="Ajouter"/>
                     <input type="button" value="Editer" onclick="EditRow()" id="btnEdit">
-                    <input type="reset" onclick="rest()">
+                    <input type="reset" onclick="rest()" id="btnRest">
                 </div>
             </form>
         </section>
@@ -63,8 +63,13 @@
         <th>Son type</th>
         <th>Est en promotion: (oui,non)</th>
         <th>Action</th>
-        
     </table>
+    <form action="" id="delAsk">
+        <h4 for="delete"> Choisez oui si voulez-vous supprimer votre produit :</h4>
+        <label for="oui"><input type="radio" name="a" value="Oui" id="oui">Oui</label>
+        <label for="non"><input type="radio" name="a" value="Non" id="non">Non</label>
+        <input type="button" onclick="AskDelet()" value="Confirmer" id="delete">
+    </form>
     <script src="java.js"></script>
 </body>
 </html>
