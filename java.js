@@ -83,7 +83,7 @@ function DeleteRow(i){
   document.getElementById('delAsk').style.display='block';
   document.getElementById('delete').onclick=function(){
     let checkbox3 = document.getElementById('oui').checked;
-    let checkbox4 = document.getElementById('Non').checked;
+    let checkbox4 = document.getElementById('non').checked;
     if(checkbox3 == true){
       document.getElementById("col"+i).remove();
       document.getElementById('delAsk').style.display='none';
