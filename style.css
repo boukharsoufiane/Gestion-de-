@@ -1,0 +1,596 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600;700&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+html { 
+    background: url(img/high-fashion-look-glamour-portrait-beautiful-sexy-young-female-woman-with-red-lips-black-background-with-hat_158538-13973.webp)no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+header{
+    width: 100%;
+    height: 10vh;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: space-between;
+}
+h1{
+    display: flex;
+    align-items: center;
+    font-family: 'Dancing Script', cursive;
+    font-weight: 700;
+    margin-left: 2%;
+    color: rgb(0, 0, 0);
+
+}
+ul{
+    display: flex;
+    align-items: center;
+    margin-right: 10%;
+}
+ul li {
+    list-style-type: none;
+}
+ul li a{
+    text-decoration: none;
+    margin: 0 0 0 30px;
+    font-family: 'Dancing Script', cursive;
+    font-weight: 700;
+    font-size: 1.5em;
+    color: rgb(250, 124, 124);
+    border-bottom: 3px solid rgb(0, 0, 0);
+    padding: 5px;
+}
+ul li a:hover{
+    background-color: #000;
+    color: rgb(250, 124, 124);
+    transition: 0.5;
+    border-radius: 20px;
+}
+#nom{
+ padding: 2%;
+ margin-bottom: 4%;
+ border: 2px solid #000;
+}
+section #form1{
+display: flex;
+flex-direction: column;
+}
+#form1 input{
+    margin-top: 4%;
+    padding: 2%;
+    border: 2px solid #000;
+}
+label{
+    color: rgb(0, 0, 0);
+    font-size: 0.8em;
+}
+#form2{
+    display: flex;
+    margin-top: 5%;
+    margin-left: 5%;
+}
+#form2 input{
+    margin: 0 0 0 10px;
+}
+select{
+    padding: 2%;
+    border: 3px solid #000;
+}
+#select2{
+    margin-top: 4%;
+    border: 3px solid #000;
+}
+section{
+    background: rgba(255, 255, 255, 0.6);
+    box-sizing: border-box;
+    border: 5px solid rgb(0, 0, 0);
+    width: fit-content;
+    height: fit-content;
+    padding: 2%;
+    margin-top: 14%;
+    margin-left: 9%;
+    border-top-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+#text2{
+    margin-top: 3%;
+    font-size: 0.8em;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+}
+#text{
+  color: #000;
+  font-size: 3em;
+  font-family: 'Dancing Script', cursive;
+  font-weight: 700;
+  
+}
+div.titre {
+    width: fit-content;
+    height: fit-content;
+    background: rgba(255, 255, 255, 0.6);
+    padding: 1%;
+    border: 5px solid #000;
+    margin-left: 17%;
+    margin-top: 20.55%;
+    border-top-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+#page{
+    display: flex;
+    flex-direction: row-reverse;
+    margin-right: 22.33%;
+}
+#button{
+    margin-left: 12%;
+    display: flex;
+}
+#button input{
+    margin: 0 0 0 10px;
+    padding: 10px;
+    font-size: 0.7em;
+    background-color: rgb(114, 18, 18);
+    color: #fff;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+}
+#button input:hover{
+    background-color: #000;
+    color: rgb(250, 124, 124);
+    transition: 0.5;
+    border-radius: 20px;
+}
+
+table{
+    border-collapse: collapse;
+    margin-top: 5%;
+    margin-left: 9%;
+    margin-bottom: 5%;
+}
+table th{
+    background: rgba(0, 0, 0, 0.6);
+    border: 4px solid rgb(255, 255, 255);
+    padding: 10px;
+    color: #fff;
+    font-size: 0.9em;
+
+}
+table td{
+    background: rgba(255, 255, 255, 0.6);
+    border: 4px solid rgb(255, 250, 250);
+    color: #000;
+    text-align: center;
+    padding: 10px;
+    font-size: 0.7em;
+}
+#btnEdit{
+    display: none;
+}
+
+@media only screen and (max-width: 700px) {
+    header{
+        width: 100%;
+        height: 10vh;
+        background-color: rgb(255, 255, 255);
+        display: flex;
+        justify-content: space-between;
+    }
+    h1{
+        display: flex;
+        align-items: center;
+        font-family: 'Dancing Script', cursive;
+        font-weight: 700;
+        margin-left: 2%;
+        color: rgb(0, 0, 0);
+    
+    }
+    ul{
+        display: flex;
+        align-items: center;
+        margin-right: 10%;
+    }
+    ul li {
+        list-style-type: none;
+    }
+    ul li a{
+        text-decoration: none;
+        margin: 0 0 0 30px;
+        font-family: 'Dancing Script', cursive;
+        font-weight: 700;
+        font-size: 1.5em;
+        color: rgb(250, 124, 124);
+        border-bottom: 3px solid rgb(0, 0, 0);
+        padding: 5px;
+    }
+    ul li a:hover{
+        background-color: #000;
+        color: rgb(250, 124, 124);
+        transition: 0.5;
+        border-radius: 20px;
+    }
+    #page{
+        display: flex;
+        flex-direction: column;
+        margin-right: 22.33%;
+    }
+    div.titre {
+        width: fit-content;
+        height: fit-content;
+        background: rgba(255, 255, 255, 0.6);
+        padding: 3%;
+        border: 5px solid #000;
+        margin-left: 20%;
+        margin-top: 20.55%;
+        border-top-left-radius: 50px;
+        border-bottom-right-radius: 50px;
+    }
+    #text{
+        color: #000;
+        font-size: 2em;
+        font-family: 'Dancing Script', cursive;
+        font-weight: 700;
+        
+    }
+    section{
+        background: rgba(255, 255, 255, 0.6);
+        box-sizing: border-box;
+        border: 5px solid rgb(0, 0, 0);
+        width: fit-content;
+        height: fit-content;
+        padding: 2%;
+        margin-top: 14%;
+        margin-left: 10% !important;
+        border-top-left-radius: 50px;
+        border-bottom-right-radius: 50px;
+    }
+    table{
+        border-collapse: collapse;
+        margin-top: 5%;
+        margin-left:1%;
+        margin-bottom: 5%;
+    }
+    table th{
+        background: rgba(0, 0, 0, 0.6);
+        border: 4px solid rgb(255, 255, 255);
+        padding: 8px;
+        color: #fff;
+        font-size: 0.7em;
+    
+    }
+    table td{
+        background: rgba(255, 255, 255, 0.6);
+        border: 4px solid rgb(255, 250, 250);
+        color: #000;
+        text-align: center;
+        padding: 5px;
+        font-size: 0.7em;
+    }
+}
+@media only screen and (max-width: 300px){
+    header{
+        width: 100%;
+        height: 10vh;
+        background-color: rgb(255, 255, 255);
+        display: flex;
+        justify-content: space-between;
+    }
+    h1{
+        display: flex;
+        align-items: center;
+        font-family: 'Dancing Script', cursive;
+        font-weight: 700;
+        margin-left: 2%;
+        color: rgb(0, 0, 0);
+        font-size: 1.1em;
+    
+    }
+    ul{
+        display: flex;
+        align-items: center;
+        margin-right: 30%;
+    }
+    ul li {
+        list-style-type: none;
+    }
+    ul li a{
+        text-decoration: none;
+        margin: 0 0 0 30px;
+        font-family: 'Dancing Script', cursive;
+        font-weight: 700;
+        font-size: 0.7em;
+        color: rgb(250, 124, 124);
+        border-bottom: 3px solid rgb(0, 0, 0);
+        padding: 5px;
+    }
+    ul li a:hover{
+        background-color: #000;
+        color: rgb(250, 124, 124);
+        transition: 0.5;
+        border-radius: 20px;
+    }
+    #page{
+        display: flex;
+        flex-direction: column;
+        margin-right: 22.33%;
+    }
+    div.titre {
+        width: fit-content;
+        height: fit-content;
+        background: rgba(255, 255, 255, 0.6);
+        padding: 10%;
+        border: 5px solid #000;
+        margin-left: 20%;
+        margin-top: 20.55%;
+        border-top-left-radius: 50px;
+        border-bottom-right-radius: 50px;
+    }
+    #text{
+        color: #000;
+        font-size: 1.1em;
+        font-family: 'Dancing Script', cursive;
+        font-weight: 700;
+        
+    }
+    section{
+        background: rgba(255, 255, 255, 0.6);
+        box-sizing: border-box;
+        border: 5px solid rgb(0, 0, 0);
+        width: fit-content;
+        height: fit-content;
+        padding: 2%;
+        margin-top: 14%;
+        margin-left: 10% !important;
+        border-top-left-radius: 50px;
+        border-bottom-right-radius: 50px;
+    }
+    table{
+        border-collapse: collapse;
+        margin-top: 5%;
+        margin-left:10%;
+        margin-bottom: 5%;
+    }
+    table th{
+        background: rgba(0, 0, 0, 0.6);
+        border: 4px solid rgb(255, 255, 255);
+        padding: 8px;
+        color: #fff;
+        font-size: 1em;
+        display: flex;
+        flex-direction: column;
+    
+    }
+    table td{
+        background: rgba(255, 255, 255, 0.6);
+        border: 4px solid rgb(255, 250, 250);
+        color: #000;
+        text-align: center;
+        padding: 5px;
+        font-size: 0.7em;
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media only screen and (max-width: 450px){
+    header{
+        width: 100%;
+        height: 10vh;
+        background-color: rgb(255, 255, 255);
+        display: flex;
+        justify-content: space-between;
+    }
+    h1{
+        display: flex;
+        align-items: center;
+        font-family: 'Dancing Script', cursive;
+        font-weight: 700;
+        margin-left: 2%;
+        color: rgb(0, 0, 0);
+        font-size: 1.4em;
+    
+    }
+    ul{
+        display: flex;
+        align-items: center;
+        margin-right: 20%;
+    }
+    ul li {
+        list-style-type: none;
+    }
+    ul li a{
+        text-decoration: none;
+        margin: 0 0 0 30px;
+        font-family: 'Dancing Script', cursive;
+        font-weight: 700;
+        font-size: 1.2em;
+        color: rgb(250, 124, 124);
+        border-bottom: 3px solid rgb(0, 0, 0);
+        padding: 5px;
+    }
+    ul li a:hover{
+        background-color: #000;
+        color: rgb(250, 124, 124);
+        transition: 0.5;
+        border-radius: 20px;
+    }
+    #page{
+        display: flex;
+        flex-direction: column;
+        margin-right: 22.33%;
+    }
+    div.titre {
+        width: fit-content;
+        height: fit-content;
+        background: rgba(255, 255, 255, 0.6);
+        padding: 10%;
+        border: 5px solid #000;
+        margin-left: 20%;
+        margin-top: 20.55%;
+        border-top-left-radius: 50px;
+        border-bottom-right-radius: 50px;
+    }
+    #text{
+        color: #000;
+        font-size: 1.1em;
+        font-family: 'Dancing Script', cursive;
+        font-weight: 700;
+        
+    }
+    section{
+        background: rgba(255, 255, 255, 0.6);
+        box-sizing: border-box;
+        border: 5px solid rgb(0, 0, 0);
+        width: fit-content;
+        height: fit-content;
+        padding: 2%;
+        margin-top: 14%;
+        margin-left: 10% !important;
+        border-top-left-radius: 50px;
+        border-bottom-right-radius: 50px;
+    }
+    table{
+        border-collapse: collapse;
+        margin-top: 5%;
+        margin-left:10%;
+        margin-bottom: 5%;
+    }
+    table th{
+        background: rgba(0, 0, 0, 0.6);
+        border: 4px solid rgb(255, 255, 255);
+        padding: 8px;
+        color: #fff;
+        font-size: 1em;
+        display: flex;
+        flex-direction: column;
+    
+    }
+    table td{
+        background: rgba(255, 255, 255, 0.6);
+        border: 4px solid rgb(255, 250, 250);
+        color: #000;
+        text-align: center;
+        padding: 5px;
+        font-size: 0.7em;
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media only screen and (max-width: 750px)and(min-width:500px){
+    header{
+        width: 100%;
+        height: 10vh;
+        background-color: rgb(255, 255, 255);
+        display: flex;
+        justify-content: space-between;
+    }
+   
+    h1{
+        display: flex;
+        align-items: center;
+        font-family: 'Dancing Script', cursive;
+        font-weight: 700;
+        margin-left: 2%;
+        color: rgb(0, 0, 0);
+        font-size: 2em;
+    
+    }
+    ul{
+        display: flex;
+        align-items: center;
+        margin-right: 20%;
+    }
+    ul li {
+        list-style-type: none;
+    }
+    ul li a{
+        text-decoration: none;
+        margin: 0 0 0 30px;
+        font-family: 'Dancing Script', cursive;
+        font-weight: 700;
+        font-size: 2em;
+        color: rgb(250, 124, 124);
+        border-bottom: 3px solid rgb(0, 0, 0);
+        padding: 5px;
+    }
+    ul li a:hover{
+        background-color: #000;
+        color: rgb(250, 124, 124);
+        transition: 0.5;
+        border-radius: 20px;
+    }
+    #page{
+        display: flex;
+        flex-direction: column;
+        margin-right: 22.33%;
+    }
+    div.titre {
+        width: fit-content;
+        height: fit-content;
+        background: rgba(255, 255, 255, 0.6);
+        padding: 10%;
+        border: 5px solid #000;
+        margin-left: 20%;
+        margin-top: 20.55%;
+        border-top-left-radius: 50px;
+        border-bottom-right-radius: 50px;
+    }
+    #text{
+        color: #000;
+        font-size: 2.2em;
+        font-family: 'Dancing Script', cursive;
+        font-weight: 700;
+        
+    }
+    section{
+        background: rgba(255, 255, 255, 0.6);
+        box-sizing: border-box;
+        border: 5px solid rgb(0, 0, 0);
+        width: fit-content;
+        height: fit-content;
+        padding: 2%;
+        margin-top: 14%;
+        margin-left: 13% !important;
+        border-top-left-radius: 50px;
+        border-bottom-right-radius: 50px;
+    }
+    table{
+        border-collapse: collapse;
+        margin-top: 5%;
+        margin-left:18%;
+        margin-bottom: 5%;
+    }
+    table th{
+        background: rgba(0, 0, 0, 0.6);
+        border: 4px solid rgb(255, 255, 255);
+        padding: 8px;
+        color: #fff;
+        font-size: 2em;
+        display: flex;
+        flex-direction: column;
+    
+    }
+    table td{
+        background: rgba(255, 255, 255, 0.6);
+        border: 4px solid rgb(255, 250, 250);
+        color: #000;
+        text-align: center;
+        padding: 5px;
+        font-size: 1.5em;
+        display: flex;
+        flex-direction: column;
+    }
+    section input{
+        font-size: 2em;
+    }
+    select {
+        font-size: 2em;
+    
+    }
+}
