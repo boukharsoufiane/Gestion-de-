@@ -33,7 +33,8 @@ function AddProduct(){
   let contenue1 ='☒';
   let text8 = document.createTextNode(contenue);
   let text9 =document.createTextNode(contenue1);
-  if(name.length!==0 && option!==0 && price!==0 && date!==0 && option2!==0 && (checkbox == true || checkbox2 == true)){
+  if(name.length!==0 && name.length <= 30 && option!==0 && price!==0 && date!==0 && option2!==0 && (checkbox == true || checkbox2 == true)){
+    window.location.replace("#table");
     table2.appendChild(text);
     table3.appendChild(text2);
     table4.appendChild(text3);
