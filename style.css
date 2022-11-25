@@ -196,6 +196,42 @@ table td{
     margin-left: 7%;
 }
 
+#warning{
+    box-sizing: border-box;
+    background: rgba(255, 255, 255, 0.6);
+    position: absolute;
+    top: 32%;
+    left: 28%;
+    padding: 2%;
+    width: fit-content;
+    height: fit-content;
+    border: 5px solid #000;
+    border-radius: 30px;
+    display: none;
+}
+#warning img{
+    width: 10vw;
+    height: 20vh;
+    margin-left: 34%;
+}
+#warning p{
+    font-size: 2em;
+}
+.btn{
+    margin-top: 6%;
+    margin-left: 22%;
+}
+.btn button{
+    margin: 0 0 0 40px;
+    padding: 10px;
+    font-size: 1.5em;
+    background-color: rgb(114, 18, 18);
+    color: #fff;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
 
 @media only screen and (max-width: 700px) {
     header{

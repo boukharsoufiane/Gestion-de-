@@ -20,7 +20,7 @@
     </header>
     <div id="page">
         <div class="titre"><p id="text">GESTION DE STOCK</p></div>
-        <section>
+        <section id="sec">
             <form action="" id="form1">
                 <input type="text" id="nom" placeholder="Son Nom">
                 <select id="select1">
@@ -64,12 +64,14 @@
         <th>Est en promotion: (oui,non)</th>
         <th>Action</th>
     </table>
-    <form action="" id="delAsk">
-        <h4 for="delete">Voulez-vous supprimer votre produit :</h4>
-        <label for="oui"><input type="radio" name="a" value="Oui" id="oui">Oui</label>
-        <label for="non"><input type="radio" name="a" value="Non" id="non">Non</label>
-        <input type="button" onclick="AskDelet()" value="Confirmer" id="delete">
-    </form>
+    <div id="warning">
+        <img src="img/sign-warning-icon-png-7.png" alt="">
+        <p>Voulez-vous supprimer votre produit?</p>
+        <div class="btn">
+            <button id="deleteRow">OUI</button>
+            <button id="cancelDelete">NON</button>
+        </div>
+    </div>
     <script src="java.js"></script>
 </body>
 </html>

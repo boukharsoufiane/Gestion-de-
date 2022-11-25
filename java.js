@@ -75,24 +75,31 @@ function AddProduct(){
     document.getElementById('select2').value="";
     document.getElementById('Oui').checked="";
     document.getElementById('Non').checked="";
-
+    window.location.replace("#table");
   }
-  
 }
 function DeleteRow(i){
-  document.getElementById('delAsk').style.display='block';
-  document.getElementById('delete').onclick=function(){
-    let checkbox3 = document.getElementById('oui').checked;
-    let checkbox4 = document.getElementById('non').checked;
-    if(checkbox3 == true){
-      document.getElementById("col"+i).remove();
-      document.getElementById('delAsk').style.display='none';
-    }
-    else if(checkbox4 == true){
-      document.getElementById('delAsk').style.display='none';
-    }
+  document.getElementById('text').style.display='none';
+  document.getElementById('sec').style.display='none';
+  document.getElementById('table').style.display='none';
+  document.getElementById('warning').style.display='block';
+  document.getElementById('deleteRow').onclick=function(){
+    document.getElementById("col"+i).remove();
+    document.getElementById('warning').style.display='none';
+    document.getElementById('text').style.display='block';
+    document.getElementById('sec').style.display='block';
+    document.getElementById('table').style.display='block';
+    window.location.replace("#table");
+  }
+  document.getElementById('cancelDelete').onclick=function(){
+    document.getElementById('warning').style.display='none';
+    document.getElementById('text').style.display='block';
+    document.getElementById('sec').style.display='block';
+    document.getElementById('table').style.display='block';
+    window.location.replace("#table");
   }
 }
+
 let table = document.getElementById('table'),rIndex;
 function ModifierRow(){
  document.getElementById('btnAjouter').style.display="none";
@@ -105,12 +112,8 @@ function ModifierRow(){
     document.getElementById('prix').value = this.cells[2].innerHTML;
     document.getElementById('Date').value = this.cells[3].innerHTML;
     document.getElementById('select2').value = this.cells[4].innerHTML;
-    if(checkbox == true){
-      document.getElementById('Oui').checked=this.cells[5].innerHTML;
-    }
-    else if(checkbox2 == true){
-      document.getElementById('Non').checked=this.cells[5].innerHTML;
-    }
+    document.getElementById('Oui').checked=this.cells[5].innerHTML;
+    document.getElementById('Non').checked=this.cells[5].innerHTML;
   };
  }
 }
