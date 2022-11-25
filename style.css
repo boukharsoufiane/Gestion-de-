@@ -196,7 +196,7 @@ table td{
     margin-left: 7%;
 }
 
-#warning{
+#warning , #warning2{
     box-sizing: border-box;
     background: rgba(255, 255, 255, 0.6);
     position: absolute;
@@ -214,8 +214,16 @@ table td{
     height: 20vh;
     margin-left: 34%;
 }
-#warning p{
+#warning2 img{
+    width: 10vw;
+    height: 20vh;
+    margin-left: 37%;
+}
+#warning p ,#warning2 p{
     font-size: 2em;
+}
+#warning2 p{
+    margin-top: 2%;
 }
 .btn{
     margin-top: 6%;
@@ -230,6 +238,9 @@ table td{
     border-radius: 5px;
     border: none;
     cursor: pointer;
+}
+#accept{
+    margin-left: 29%;
 }
 
 

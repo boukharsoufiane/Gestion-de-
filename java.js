@@ -34,7 +34,7 @@ function AddProduct(){
   let contenue1 ='☒';
   let text8 = document.createTextNode(contenue);
   let text9 =document.createTextNode(contenue1);
-  if(name.length!==0 && name.length <= 30 && option!==0 && price!==0 && date!==0 && option2!==0 && (checkbox == true || checkbox2 == true)){
+  if(name.length!==0 && name.length <= 30 && option.length!==0 && price.length !==0 && date!==0 && option2.length!==0 && (checkbox == true || checkbox2 == true)){
     window.location.replace("#table");
     table2.appendChild(text);
     table3.appendChild(text2);
@@ -76,6 +76,17 @@ function AddProduct(){
     document.getElementById('Oui').checked="";
     document.getElementById('Non').checked="";
     window.location.replace("#table");
+  }else{
+    document.getElementById('text').style.display='none';
+    document.getElementById('sec').style.display='none';
+    document.getElementById('table').style.display='none';
+    document.getElementById('warning2').style.display='block';
+    document.getElementById('accept').onclick=function(){
+      document.getElementById('warning2').style.display='none';
+      document.getElementById('text').style.display='block';
+      document.getElementById('sec').style.display='block';
+      document.getElementById('table').style.display='block';
+    }
   }
 }
 function DeleteRow(i){
