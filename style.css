@@ -165,9 +165,9 @@ table th{
 
 }
 table td{
-    background: rgba(255, 255, 255, 0.6);
+    background: rgba(83, 83, 83, 0.6);
     border: 4px solid rgb(255, 250, 250);
-    color: #000;
+    color: rgb(255, 255, 255);
     text-align: center;
     padding: 10px;
     font-size: 0.7em;

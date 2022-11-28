@@ -90,21 +90,21 @@ function AddProduct(){
   }
 }
 function DeleteRow(i){
-  document.getElementById('text').style.display='none';
+  document.getElementById('text1').style.display='none';
   document.getElementById('sec').style.display='none';
   document.getElementById('table').style.display='none';
   document.getElementById('warning').style.display='block';
   document.getElementById('deleteRow').onclick=function(){
     document.getElementById("col"+i).remove();
     document.getElementById('warning').style.display='none';
-    document.getElementById('text').style.display='block';
+    document.getElementById('text1').style.display='block';
     document.getElementById('sec').style.display='block';
     document.getElementById('table').style.display='block';
     window.location.replace("#table");
   }
   document.getElementById('cancelDelete').onclick=function(){
     document.getElementById('warning').style.display='none';
-    document.getElementById('text').style.display='block';
+    document.getElementById('text1').style.display='block';
     document.getElementById('sec').style.display='block';
     document.getElementById('table').style.display='block';
     window.location.replace("#table");
