@@ -34,7 +34,7 @@ function AddProduct(){
   let contenue1 ='☒';
   let text8 = document.createTextNode(contenue);
   let text9 =document.createTextNode(contenue1);
-  if(name.length!==0 && name.length <= 30 && option.length!==0 && price.length !==0 && date!==0 && option2.length!==0 && (checkbox == true || checkbox2 == true)){
+  if(name.length!==0 && name.length <= 30 && option.length!==0 && price.length !==0 && date.length!==0 && option2.length!==0 && (checkbox == true || checkbox2 == true)){
     window.location.replace("#table");
     table2.appendChild(text);
     table3.appendChild(text2);
@@ -145,7 +145,6 @@ function EditRow(){
   else if(checkbox2 == true){
     table.rows[rIndex].cells[5].innerHTML = document.getElementById('Non').value;
   }
-
 }
 
 function rest(){
@@ -157,3 +156,6 @@ function rest(){
   document.getElementById('Oui').checked="";
   document.getElementById('Non').checked="";
 }
+
+
+
