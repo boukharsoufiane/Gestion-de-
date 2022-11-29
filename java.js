@@ -76,16 +76,35 @@ function AddProduct(){
     document.getElementById('Oui').checked="";
     document.getElementById('Non').checked="";
     window.location.replace("#table");
-  }else{
+  }
+  if(name.length>30){
+    document.getElementById('warning2').style.display='block';
+    document.getElementById('lettre').style.display='none';
+    document.getElementById('lettres').style.display='block';
     document.getElementById('text').style.display='none';
     document.getElementById('sec').style.display='none';
     document.getElementById('table').style.display='none';
-    document.getElementById('warning2').style.display='block';
+    document.getElementById('text1').style.display='none';
     document.getElementById('accept').onclick=function(){
       document.getElementById('warning2').style.display='none';
       document.getElementById('text').style.display='block';
       document.getElementById('sec').style.display='block';
       document.getElementById('table').style.display='block';
+      document.getElementById('text1').style.display='block';
+    }
+  }
+  else{
+    document.getElementById('text').style.display='none';
+    document.getElementById('sec').style.display='none';
+    document.getElementById('table').style.display='none';
+    document.getElementById('warning2').style.display='block';
+    document.getElementById('text1').style.display='none';
+    document.getElementById('accept').onclick=function(){
+      document.getElementById('warning2').style.display='none';
+      document.getElementById('text').style.display='block';
+      document.getElementById('sec').style.display='block';
+      document.getElementById('table').style.display='block';
+      document.getElementById('text1').style.display='block';
     }
   }
 }
