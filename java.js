@@ -77,7 +77,7 @@ function AddProduct(){
     document.getElementById('Non').checked="";
     window.location.replace("#table");
   }
-  if(name.length>30){
+  else if(name.length>30){
     document.getElementById('warning2').style.display='block';
     document.getElementById('lettre').style.display='none';
     document.getElementById('lettres').style.display='block';
